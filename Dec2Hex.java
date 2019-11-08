@@ -19,15 +19,14 @@ class Dec2Hex
                 System.exit(1);
             }
         }
-		else if (args.length <=0)
-		{
-			System.out.println("please enter a Decimal number to be converted");
-		}
+	
 
     	char ch[]={'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
          int rem, num;
 	num = Arg1;
 	String hexadecimal=""; 
+	
+	if (num != null){
         System.out.println("Converting the Decimal Value " + num + " to Hexadecimal...");
         
         while(num != 0)
@@ -38,6 +37,12 @@ class Dec2Hex
         }
         
         System.out.println("Hexadecimal representation is : " + hexadecimal);
+	}
+	else
+			
+		{
+			System.out.println("please enter a Decimal number to be converted");
+		}
 
     }
 }
