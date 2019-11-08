@@ -27,11 +27,4 @@
   </target>
  
 </project>
-:wq
-exit
-:q!
-:q!
-cd
-end
-ps
-stop
+
