@@ -6,7 +6,8 @@ class Dec2Hex
     public static int Arg1;
 
     public static void main(String args[])
-    {
+	{
+	if (args != null){
         if (args.length > 0) 
         {
             try 
@@ -26,7 +27,7 @@ class Dec2Hex
 	num = Arg1;
 	String hexadecimal=""; 
 	
-	if (num != null){
+	
         System.out.println("Converting the Decimal Value " + num + " to Hexadecimal...");
         
         while(num != 0)
@@ -43,6 +44,7 @@ class Dec2Hex
 		{
 			System.out.println("please enter a Decimal number to be converted");
 		}
+	
 
     }
 }
